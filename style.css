@@ -263,6 +263,32 @@ p {
 	border-radius: .25rem;
 	overflow: visible;
 }
+/*----------
+ footer area
+ ----------- */
+.footer-area{
+    text-align: center;
+    color: white;
+    background-color: #120E43;
+    margin-top: 20px;
+    padding: 40px 0;
+}
+.footer-area h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer-area p{
+    font-size: 13px;
+    margin-bottom: 0;
+    line-height: 2;
+}
+.footer-icon i{
+    background-color: #120E43;
+    font-size: 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+ 
 
 
 
