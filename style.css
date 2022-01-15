@@ -87,4 +87,13 @@ nav{
     width: 70%;
     margin-top: 30px;  
 }
+/* logo title */
+
+.logo-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 100px; 
+}
 
