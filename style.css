@@ -7,42 +7,44 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+img {
+    max-width: 100%;
+}
 /*----------
  header area
  ----------- */
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 80%;
 }
 nav{
     display:flex;
     justify-content: space-between;
 }
-.header-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+.header-menu {
+    padding: 40px 0;
 }
 .header-left h2{
     font-size: 25px;
 }
-.header-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+.header-right {
+    display: inline-flex;
+    list-style: none;
 }
 .header-right li{
     list-style: none;
-    margin: 0 10px;
-    padding: 10px 10px;
     cursor: pointer;
-    font-size: 18px;
 }
 .header-right li a{
     text-decoration: none;
     color: black;
+    padding:6px 10px;
+    font-size: 18px;
+    display: inline-block;
+}
+.cart i {
+    padding-top: 13px;
 }
 .header-right i{
     margin:0 10px;
@@ -50,16 +52,19 @@ nav{
     font-size: 25px;
     cursor: pointer;
 }
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .section-area{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 100px;
+    padding-top: 60px;
 }
 .section-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-basis: 48%;
+}
+.section-left:hover{
+    border-radius: 5px;
 }
 .section-left .section-title{
     font-size: 45px;
@@ -81,50 +86,56 @@ nav{
     font-size: 18px;
 }
 .section-right{
+    flex-basis: 48%;
     text-align: center;
+    overflow: hidden;
+}
+.section-right img:hover{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
 }
 .section-right img{
     background-image: url(images/Circle.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 70%;
-    margin-top: 30px;  
+    overflow: hidden;  
 }
 /*---------
  logo title
  ---------- */
-
-.logo-title{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
-    margin-bottom: 100px; 
+hr{
+    margin: 25px 0;
 }
 /*-----------
  popular area
  ------------ */
-
-
 .heading{
     text-align: center;
     margin-bottom: 40px;
     font-size: 25px;
 }
-.popular-area{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 2em;
-    justify-items: center;
-}
 .popular{
     background-color: #ffffff;
-    width: 300px;
-    padding: 10px;
-    box-shadow: 5px 8px 5px 8px lightgray;
+    box-shadow: 0px 1px 10px 3px #d1d1d1;
     border-radius: 5px;
+    flex-basis: 31%;
+    margin-bottom: 30px;
 }
-
+.popular img {
+    transition: .4s;
+    display: block;
+    width: 100%;
+}
+.popular:hover img{
+ transform: scale(1.1)
+}
+.popular-top {
+    overflow: hidden;
+    padding: 10px;
+}
+.popular-buttom {
+    padding: 10px;
+}
 .popular-buttom h2{
     font-size: 30px;
     margin: 10px 0;
@@ -151,6 +162,7 @@ nav{
 .popular-buttom p{
     font-size: 13px;
     color: gray;
+    margin-bottom: 0;
 }
 .popular-link{
     display: flex;
@@ -165,7 +177,9 @@ nav{
     margin-left: 5px;
     margin-right: 35px;
 }
-/* form area */
+/*--------
+ form area
+ --------- */
 .mt-5 h2{
     text-align: center;
     font-size: 30px;
@@ -288,7 +302,39 @@ p {
     margin: 20px 10px;
     cursor: pointer;
 }
+button {
+    transition: .4s;
+}
+button:hover {
+    letter-spacing: 1px;
+}
+/*---------
+ media Queries
+ ---------- */
+ @media (max-width:980px) {
+    .popular {
+        flex-basis: 48%;
+    }
+    .header-right {
+        display: initial;
+    }
+    .logo-title img{
+        flex-basis: 32%;
+        margin: 10px 0;
+    }
+    .section-area {
+        flex-direction:column-reverse;
+    }
+ }
+ @media (max-width:768px) {
+    .popular,
+    .section-right,
+    .section-left {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-title img{
+        flex-basis: 24%;
+    }
+}
  
-
-
-
