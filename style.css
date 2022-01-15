@@ -6,7 +6,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-/* header area */
+/*----------
+ header area
+ ----------- */
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -87,7 +89,9 @@ nav{
     width: 70%;
     margin-top: 30px;  
 }
-/* logo title */
+/*---------
+ logo title
+ ---------- */
 
 .logo-title{
     display: flex;
@@ -96,4 +100,70 @@ nav{
     font-size: 30px;
     margin-bottom: 100px; 
 }
+/*-----------
+ popular area
+ ------------ */
+
+
+.heading{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.popular-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 2em;
+    justify-items: center;
+}
+.popular{
+    background-color: #ffffff;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 5px 8px 5px 8px lightgray;
+    border-radius: 5px;
+}
+
+.popular-buttom h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.popular-buttom .dolar{
+    font-size:25px;
+}
+.star-area{
+    margin-top: 10px;
+}
+.popular-buttom .star{
+    color: #E8BD0D;
+    font-size: 10px;
+}
+.popular-buttom .half{
+    color: #E8BD0D;
+    font-size: 10px;
+}
+.popular-buttom .point{
+    font-size: 15px;
+    margin-left:10px;
+    color: gray;
+}
+.popular-buttom p{
+    font-size: 13px;
+    color: gray;
+}
+.popular-link{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px; 
+}
+.popular-link a{
+    text-decoration: none;
+    color: #E6425E;
+}
+.popular-link i{
+    margin-left: 5px;
+    margin-right: 35px;
+}
+
+
 
