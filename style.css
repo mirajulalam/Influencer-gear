@@ -1,3 +1,4 @@
+/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@500&display=swap');
 *{
     margin: 0;
@@ -163,6 +164,104 @@ nav{
 .popular-link i{
     margin-left: 5px;
     margin-right: 35px;
+}
+/* form area */
+.mt-5 h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.row-7 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.row-7 .left-7 {
+	flex: 0 0 41.666667%;
+	max-width: 41.666667%;
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.row-7 .from-group {
+	margin-bottom: 1rem;
+}
+.row-7 .from-group label {
+	font-weight: 500;
+	margin-bottom: .5rem;
+	display: inline-block;
+}
+.row-7 .from-group .from-control {
+	height: 45px;
+	border: 1px solid #e8e8e8;
+	color: #052f61;
+	background-color: transparent;
+	display: block;
+	width: 90%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-clip: padding-box;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	overflow: visible;
+	margin: 0;
+}
+.row-7 .right-7 {
+	flex: 0 0 58.333333%;
+	max-width: 52.333333%;
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.row-7 label {
+	display: inline-block;
+	margin-bottom: .5rem;
+	font-weight: 500;
+}
+ .from-control {
+	height: auto;
+	border: 1px solid #e8e8e8;
+	color: #052f61;
+    background-color: transparent;
+    display: block;
+    width: 95%;
+    padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	overflow: auto;
+	resize: vertical;
+}
+.row-7 .text-right {
+	text-align: right;
+}
+.row-7 .text-right .btn-pramiry {
+	background-color: #106fde;
+	border: 1px solid #106fde ;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+	padding: 12px 16px;
+	transition: all 0.3s ease-in-out;
+	margin-top: 1rem;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: .25rem;
+	overflow: visible;
 }
 
 
